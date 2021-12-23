@@ -2,12 +2,12 @@
 
 # -- Project information
 
-project = 'CADD计算机上辅助药物设计'
+project = '计算机辅助药物设计教程'
 copyright = '2021, Abdusemi'
 author = 'Abdusemi'
 
-release = '0.1'
-version = '0.1.0'
+release = ''
+version = ''
 
 # -- General configuration
 
