@@ -1,12 +1,81 @@
 如何给此项目贡献
 ========================================================
-第一步：学会使用Github
+第一步：安装Github并克隆此项目
 --------------------------------------------------------
-第二步：学会使用Visual Code
---------------------------------------------------------
-第三步：学会编辑RST文件
----------------------------------------------------------
-RST语法：https://www.sphinx-doc.org/zh_CN/master/usage/restructuredtext/basics.html
+1.从 https://desktop.github.com/  下载安装好github desktop。
 
-第四步：学会给此项目贡献
+2.打开GitHub desktop 如果没有账号请点击Create your free account，如下图所示。
+
+.. image:: /images/1.png
+
+会弹出一个网站，填写网站要求的信息,如下图所示。
+
+.. image:: /images/2.png
+
+输入邮箱收到的验证码，如下图所示。
+
+.. image:: /images/3.png
+
+后面的调查问卷可以不管。点击continue for free完成GitHub账号的注册。
+
+4.注册完账户后，打开安装好的github desktop软件，点击sign in github。 会弹出一个网站，点击authorize desktop。然后会自动回到github desktop软件，点击finish。
+
+5.接下来，点击Clone a repository from the Internet... 在弹出的框里选择URL。Repository URL中填写 https://github.com/abdusemiabduweli/CADD-tutorial  Local path选择一个你想要保存此项目的文件夹，点击Clone，如下图所示。
+
+.. image:: /images/4.jpg
+
+就这样在电脑上安装配置好了Github，也下载好了一份此项目，项目文件夹地址就是你刚才在Local path上选择的文件夹。
+
+第二步：安装python
+----------------------------------------------------------
+1.从 https://www.python.org/downloads/ 下载安装好python。
+
+第三步：安装Visual Studio Code并搭建好环境
+--------------------------------------------------------
+1.从https://code.visualstudio.com/ 下载安装好visual studio code。
+
+2.打开GitHub Desktop，在如下图1所示的地方选择此项目 CADD-tutorial， 并点击2所示的按钮Open in visual studio code，如下图所示，打开Visual studio code。
+
+.. image:: /images/5.jpg
+
+如果出现如下图的提示，打勾1所示的框，点击2所示的按钮。
+
+.. image:: /images/6.jpg
+
+3.在visual studio code中点击1所示的extensions按钮，搜索ext:rst，点击2和3所示的插件的install按钮，安装这两个插件。
+
+.. image:: /images/7.jpg
+
+4.同样的，点击extensions按钮，搜索python，安装第一个插件。安装完后会出现如下图所示的界面，点击1所示的按钮，再点击选择2所示的文件。
+
+.. image:: /images/8.jpg
+
+5.点击Visual studio code菜单栏上的Terminal-->New Terminal，下图中的1所示的按钮，在下方窗口中输入pip install sphinx sphinx-autobuild，点击Enter键，等待安装完成。一般再次出现PS D:\ 等字样时，表明安装完成。同样的操作，输入pip install furo，等待安装完成。
+
+.. image:: /images/9.jpg
+
+第五步：如何给此项目贡献
 ---------------------------------------------------------
+
+如果完成了上面的操作，那么你的电脑上就保存着一份此项目。项目在你前面指定的Local path上选择的文件夹里。如果打开文件夹，你能看到如下图一样的一堆文件和文件夹。
+
+.. image:: /images/10.jpg
+
+其中红色方框中显示的是 https://cadd-tutorial.readthedocs.io 这个网站的文件。如果我们改变了我Github账号中的CADD-tutorial项目中的这些文件，就能直接改变上面提到的网站显示的内容。浅绿色方框中的文件夹你可能看不到，这是因为我在深绿色方框中的.gitignore文件中列举了这个文件夹，所以我在上传我电脑本地存在的项目到Github网站时，不会把这个浅绿色方框中的文件夹上传到Github网站。.gitignore文件的详细介绍可以参考这个文章：https://www.jianshu.com/p/699ed86028c2 。剩余的文件都是我提供给你们的参考文献。这些文献大部分来自中国药科大学计算机辅助药物设计课程。因为我没有得到此课程负责老师们的同意（我没问，我怕他们会不同意我上传这些文件到Github），所以我们的第一个目标是把这些文件都转换成rst文件。rst文件都在此项目docs文件夹里，后缀为.rst，这些rst文件都是遵循rst文件的语法规则，rst语法规则可以参考这个文章 https://www.sphinx-doc.org/zh_CN/master/usage/restructuredtext/basics.html#source-encoding。这些rst文件编辑完后上传到我的github账号中此项目时，会被自动 https://readthedocs.org/ 网站转换成html等文件保存在 readthedocs团队提供的服务器中。我们的此项目成果 https://cadd-tutorial.readthedocs.io （CADD教程网站）就是由它们提供免费的技术支持实现的，这里特地感谢他们。readthedocs不仅把rst文件转换成html文件，还会转换成PDF，Epub文件，这些文件可以点击下图所示的按钮下载。
+
+.. image:: /images/11.jpg
+
+我提供的文献都是PDF格式的，除非在电脑上阅读，但是其他设备上阅读起来非常差，也不能编辑。如果我们把我们的文献全部转换成了rst文件，我就能把这些pdf文件都删掉，这样也不会有任何版权问题。我们的此项目遵循GNU协议，包括我们的rst文件，详情请阅读项目中的LICENSE文件。
+
+那么怎么编辑我们的项目成果 https://cadd-tutorial.readthedocs.io （CADD教程网站）？ 
+前面提到了只要我们编辑此项目中docs文件夹中的文件和.readthedocs.yaml并上传到我的GitHub账号中的CADD-tutorial项目，CADD教程网站也会自动地被改变。.readthedocs.yaml文件是CADD教程网站的配置文件，可以先不管，详情请阅读这个文章 https://docs.readthedocs.io/en/stable/config-file/index.html 。打开docs文件夹，你能看到以下文件
+
+.. image:: /images/12.jpg
+
+其中images保存此网站中用到的图片。Conf.py和requirements也是此网站的配置文件，也可以先不管，详情请阅读这些文章 https://pip.pypa.io/en/latest/user_guide/#requirements-files https://www.sphinx-doc.org/en/master/tutorial/more-sphinx-customization.html。其他的rst文件就是CADD-tutorial网站中个网页的内容，需要用rst语法规则编辑。rst语法规则可以参考这个文章 https://www.sphinx-doc.org/zh_CN/master/usage/restructuredtext/basics.html#source-encoding。打开我们的项目成果网站 https://cadd-tutorial.readthedocs.io 就能看到首页，首页对应的rst文件是index.rst。在左侧能看到分子力学、分子动力学、定量构效关系、人工智能、基于结构的药物设计、基于配体的药物设计、如何给此项目贡献等网页。这些网页所对应的rst文件分别是   MolecularMechanics.rst MolecularDynamics.rst QSAR.rst AI.rst SBDD.rst LBDD.rst contribute.rst。编辑相应的rst文件就相当于编辑了相对应的网站。最后只需上传到我的github账号中CADD-tutorial项目中。下面我给你们演示编辑如何给此项目贡献网页。
+
+
+
+
+
+如果想要进一步学习相关技术软件，请阅读git的详情介绍文章，sphinx的详情介绍文字https://www.sphinx-doc.org/en/master/index.html。
