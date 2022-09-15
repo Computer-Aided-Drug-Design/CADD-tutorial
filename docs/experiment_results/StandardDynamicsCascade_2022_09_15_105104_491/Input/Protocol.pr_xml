@@ -1,0 +1,243 @@
+
+<ELU xmlns="http://www.accelrys.com/dsm/elu/2">
+  <experiment Expanded="Production,Implicit Solvent Model,Heating,Minimization2,Nonbond List Radius,Advanced,Minimization,Equilibration" Guid="{79F415B3-7F63-4105-B7FE-83F48E41BA6F}" protocol="Protocols/BIOVIA Discovery Studio/Discovery Studio/Simulation/Dynamics/Standard Dynamics Cascade" protocolName="Standard Dynamics Cascade" version="1">
+    <Accl:mpropval name="Advanced" type="GroupType">
+      <Accl:value></Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Apply SHAKE Constraint" type="BoolType">
+      <Accl:value>True</Accl:value>
+      <Accl:transformData>True</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="DSRunInteractive" type="BoolType">
+      <Accl:value>True</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Dielectric Constant" type="DoubleType">
+      <Accl:value>1</Accl:value>
+      <Accl:transformData>1</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Dynamics Integrator" type="StringType">
+      <Accl:value>Leapfrog Verlet</Accl:value>
+      <Accl:transformData>Leapfrog Verlet</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Electrostatics" type="StringType">
+      <Accl:value>Automatic</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Equilibration" type="GroupType">
+      <Accl:value></Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Equilibration Adjust Velocity Frequency" type="LongType">
+      <Accl:value>50</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Equilibration Constraints" type="ConstraintOfStructurewithforcefieldType">
+      <Accl:value></Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Equilibration Save Results Interval (ps)" type="DoubleType">
+      <Accl:value>2</Accl:value>
+      <Accl:transformData>2</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Equilibration Simulation Time (ps)" type="DoubleType">
+      <Accl:value>10</Accl:value>
+      <Accl:transformData>10</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Equilibration Target Temperature" type="DoubleType">
+      <Accl:value>300.0</Accl:value>
+      <Accl:transformData>300.0</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Equilibration Time Step (fs)" type="DoubleType">
+      <Accl:value>2</Accl:value>
+      <Accl:transformData>2</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Generalized Born Lambda Constant" type="DoubleType">
+      <Accl:value></Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Heating" type="GroupType">
+      <Accl:value></Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Heating Adjust Velocity Frequency" type="LongType">
+      <Accl:value>50</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Heating Constraints" type="ConstraintOfStructurewithforcefieldType">
+      <Accl:value></Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Heating Initial Temperature" type="DoubleType">
+      <Accl:value>50.0</Accl:value>
+      <Accl:transformData>50.0</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Heating Save Results Interval (ps)" type="DoubleType">
+      <Accl:value>2</Accl:value>
+      <Accl:transformData>2</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Heating Simulation Time (ps)" type="DoubleType">
+      <Accl:value>4</Accl:value>
+      <Accl:transformData>4</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Heating Target Temperature" type="DoubleType">
+      <Accl:value>300.0</Accl:value>
+      <Accl:transformData>300.0</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Heating Time Step (fs)" type="DoubleType">
+      <Accl:value>2</Accl:value>
+      <Accl:transformData>2</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Implicit Solvent Dielectric Constant" type="DoubleType">
+      <Accl:value>80</Accl:value>
+      <Accl:transformData>80</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Implicit Solvent Model" type="StringType">
+      <Accl:value>Generalized Born</Accl:value>
+      <Accl:transformData>Generalized Born</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Input Atomic Radii" type="StringType">
+      <Accl:value>van der Waals radii</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Input Typed Molecule" type="StructurewithforcefieldType">
+      <Accl:value>1YRF_prep:1YRF</Accl:value>
+      <Accl:transformData>f43cccac-a342-54df-53-10-a8-19-04-ec-b0-31</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Kappa" type="DoubleType">
+      <Accl:value>0.34</Accl:value>
+      <Accl:transformData>0.34</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Minimization" type="GroupType">
+      <Accl:value></Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Minimization Algorithm" type="StringType">
+      <Accl:value>Steepest Descent</Accl:value>
+      <Accl:transformData>Steepest Descent</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Minimization Constraints" type="ConstraintOfStructurewithforcefieldType">
+      <Accl:value></Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Minimization Max Steps" type="LongType">
+      <Accl:value>1000</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Minimization RMS Gradient" type="DoubleType">
+      <Accl:value>1.0</Accl:value>
+      <Accl:transformData>1.0</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Minimization2" type="GroupType">
+      <Accl:value></Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Minimization2 Algorithm" type="StringType">
+      <Accl:value>Conjugate Gradient</Accl:value>
+      <Accl:transformData>Conjugate Gradient</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Minimization2 Constraints" type="ConstraintOfStructurewithforcefieldType">
+      <Accl:value></Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Minimization2 Max Steps" type="LongType">
+      <Accl:value>2000</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Minimization2 RMS Gradient" type="DoubleType">
+      <Accl:value>0.1</Accl:value>
+      <Accl:transformData>0.1</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Minimum Hydrogen Radius" type="DoubleType">
+      <Accl:value>0.8</Accl:value>
+      <Accl:transformData>0.8</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Non-polar Surface Coefficient" type="DoubleType">
+      <Accl:value>0.00542</Accl:value>
+      <Accl:transformData>0.00542</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Non-polar Surface Constant" type="DoubleType">
+      <Accl:value>0.92</Accl:value>
+      <Accl:transformData>0.92</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Nonbond Higher Cutoff Distance" type="DoubleType">
+      <Accl:value>12.0</Accl:value>
+      <Accl:transformData>12.0</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Nonbond List Radius" type="DoubleType">
+      <Accl:value>14.0</Accl:value>
+      <Accl:transformData>14.0</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Nonbond Lower Cutoff Distance" type="DoubleType">
+      <Accl:value>10.0</Accl:value>
+      <Accl:transformData>10.0</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Number of Processors" type="LongType">
+      <Accl:value>1</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Order" type="LongType">
+      <Accl:value>4</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="PGamma" type="DoubleType">
+      <Accl:value>25.0</Accl:value>
+      <Accl:transformData>25.0</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="PMass" type="DoubleType">
+      <Accl:value>1000.0</Accl:value>
+      <Accl:transformData>1000.0</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Production" type="GroupType">
+      <Accl:value></Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Production Constraints" type="ConstraintOfStructurewithforcefieldType">
+      <Accl:value></Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Production Save Restart File" type="BoolType">
+      <Accl:value>True</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Production Save Results Interval (ps)" type="DoubleType">
+      <Accl:value>2</Accl:value>
+      <Accl:transformData>2</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Production Simulation Time (ps)" type="DoubleType">
+      <Accl:value>10</Accl:value>
+      <Accl:transformData>10</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Production Target Temperature" type="DoubleType">
+      <Accl:value>300.0</Accl:value>
+      <Accl:transformData>300.0</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Production Temperature Coupling Decay Time" type="DoubleType">
+      <Accl:value>5.0</Accl:value>
+      <Accl:transformData>5.0</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Production Time Step (fs)" type="DoubleType">
+      <Accl:value>2</Accl:value>
+      <Accl:transformData>2</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Production Type" type="StringType">
+      <Accl:value>NPT</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Queue Name" type="StringType">
+      <Accl:value></Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Random Number Seed" type="StringType">
+      <Accl:value>314159 314159 314159 314159</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Reference Pressure" type="DoubleType">
+      <Accl:value>1.0</Accl:value>
+      <Accl:transformData>1.0</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Reporting" type="GroupType">
+      <Accl:value></Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Reporting Stylesheet" type="StylesheetType">
+      <Accl:value>{42691EC8-0CE0-4DB9-8B3C-5379CBB967A7}</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Run On Grid" type="BoolType">
+      <Accl:value>True</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Salt Concentration" type="DoubleType">
+      <Accl:value>0.0</Accl:value>
+      <Accl:transformData>0.0</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Save Intermediate Files" type="BoolType">
+      <Accl:value>False</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="TMass" type="DoubleType">
+      <Accl:value>1000.0</Accl:value>
+      <Accl:transformData>1000.0</Accl:transformData>
+    </Accl:mpropval>
+    <Accl:mpropval name="Use Molecular Surface" type="BoolType">
+      <Accl:value>True</Accl:value>
+    </Accl:mpropval>
+    <Accl:mpropval name="Use Non-polar Surface Area" type="BoolType">
+      <Accl:value>True</Accl:value>
+    </Accl:mpropval>
+  </experiment>
+
+</ELU>

@@ -5,7 +5,7 @@
 
 此项目创始人：Abdusemi
 
-此项目中的资料来自中国药科大学CADD课程。
+此项目中的资料来自中国药科大学孙慧涌、邹毅等老师的CADD课程。
 
 目标：
 ---------------------------------------------------------
@@ -15,6 +15,7 @@
 ------------------------------
 
 .. toctree::
+   introduction
    MolecularMechanics
    MolecularDynamics
    QSAR
@@ -23,3 +24,5 @@
    LBDD
    contribute
 .. _Github地址点这里: https://github.com/abdusemiabduweli/CADD-tutorial/
+
+

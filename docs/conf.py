@@ -3,8 +3,7 @@
 # -- Project information
 
 project = '计算机辅助药物设计教程'
-copyright = '2021, Abdusemi'
-author = 'Abdusemi'
+author = '2022, AbdusemiAbduweli'
 
 release = ''
 version = ''

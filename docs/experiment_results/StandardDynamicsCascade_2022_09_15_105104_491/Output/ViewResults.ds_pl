@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+use MdmDiscoveryScript;
+use SdmDiscoveryScript;
+use DSScript;
+
+my $document = DiscoveryScript::Open({"Path" => "1YRF.dsv", "LoadAllObjects" => False});
+use MdmDiscoveryScript;
+use DSScript;
+
+my $hashargs = { message => "<strong>Standard Dynamics Cascade</strong><BR><html><table align=\"left\" border=\"1\" cellspacing=\"5\" summary=\"\"><tr><td>Start Time (ps)</td><td>End Time (ps)</td><td>Final Energy</td><td>Average Energy (kcal/mol) </td><td>Energy Fluctuation (kcal/mol) </td></tr><tr><td>  14.000</td><td>  24.000</td><td>-1738.416</td><td>-1733.518</td><td>   3.986</td></tr></Table></html>",
+ details => "",
+ error => "",
+ ignore => "Protocol MessageBox: Standard Dynamics Cascade" };
+use MdmCommands;
+MdmCommands::DSReportMessageBox($hashargs);

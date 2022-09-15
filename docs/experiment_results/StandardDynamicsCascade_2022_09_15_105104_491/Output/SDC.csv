@@ -1,0 +1,6 @@
+Name,Stage,Forcefield,Start Time (ps),End Time (ps),Initial Potential Energy (kcal/mol),Total Energy (kcal/mol),Potential Energy (kcal/mol),Kinetic Energy (kcal/mol),Temperature (K),Van der Waals Energy (kcal/mol),Electrostatic Energy (kcal/mol),Initial RMS Gradient (kcal/(mol x A)),Final RMS Gradient (kcal/(mol x A))
+1YRF,Minimization,CHARMm,,,-2355.369,,-2500.566,,,-256.290,-1643.843,11.715,0.908
+1YRF,Minimization2,CHARMm,,,-2500.566,,-2574.063,,,-263.858,-1500.762,0.908,0.165
+1YRF,Heating,CHARMm,0.000,4.000,-2574.063,-1757.554,-2185.048,427.494,290.317,-222.762,-1319.776,1.472,18.964
+1YRF,Equilibration,CHARMm,4.000,14.000,-2185.048,-1728.785,-2184.258,455.473,309.318,-185.431,-1284.526,18.964,18.635
+1YRF,Production,CHARMm,14.000,24.000,-2184.258,-1738.416,-2190.207,451.791,306.817,-192.239,-1049.459,18.635,19.393
