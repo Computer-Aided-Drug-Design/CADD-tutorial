@@ -172,3 +172,177 @@ R值注意问题：
 * 当n相对于k不大时，会获得较大的R值，即容易产生偶然相关（过拟合， overfitting），特别是当n=k+1时，即使k个自变量与因变量Y完全不相关，亦有R=1的结果。
 * 因此进行多元线性回归时要注意n与k的比例。一般认为，参与回归分析的化合物数目n与所得到的关系式中参数项数目k（即分子描述符个数）之比应不小于5:1（至少4:1）
 
+分子描述符取舍原则:若交叉相关系数>0.9，说明两参数高度相关，即回归方程中保留一个即可，对两个条件相似参数可删除与目标值相关性小的参数。
+
+模型检验
+------------
+
+内部验证（交互验证）（cross validation）：
+
+* Leave-One-Out (LOO)
+* Leave-Many-Out (LMO) 
+* Bootstrapping
+
+最常用交互检验方法：留一法（Leave-One-Out, LOO）
+
+交互检验：依次从N个样本中抽出1个样本，用剩下的N-1个样本来建立构效关系模型，然后用建立的模型预测抽取出来的1个样本的活性，重复这个操作，直到所有样本都被抽去和预测。然后计算内部测试集预测误差的平方和（PRESS）和交互检验相关系数（QLOO）
+
+.. math:: 
+  PRESS=\sum{(y_{pred}-y_{exp})^2} 
+  
+.. math:: 
+  Q_{LOO} = \sqrt{1-\frac{PRESS}{\sum{(y_{exp}-y_{mean})^2}}}
+
+.. image:: images/54.png
+
+外部验证
+
+外部测试集（test set）预测：从研究的化合物中挑选出足够多的样本组成预测集，预测集中的样本不参加模型的构建，然后通过模型对预测集中的分子的预测结果来检验模型真实的预测能力（Rtest）。
+
+QSAR模型构建的注意事项：
+
+* 模型应用范围：定量构效关系的研究只能应用于作用机制相同的同源化合物，一般认为，结构相近的同源物，其在体内作用机制相同
+* 实验数据选择：当一组同源物的生物活性变化幅度若小于一个对数单位（即小于10倍）时，往往难以得到满意的相关结果，这是由相关系数（R）的计算方法决定的
+* 模型可靠性判断条件：一般认为，当 :math:`R^2>0.8` 或 :math:`Q^2>0.5` 时，模型具有较好预测能力；模型外部测试结果（Rtest）应与内部交互验证结果（Q）相当
+* 模型样本调整：在进行回归分析计算中，若有偏离较大的化合物需剔除时，剔除的数据点不能过多，以避免过多人为因素干扰。对于被去除的数据点应给予合理的解释
+
+定量构效关系不能代替传统药物设计，其不能发现全新结构先导化合物。这一方面工作可以通过基于结构的药物设计进行（如分子对接）
+
+在预测生物活性方面并不总是成功的，这是因为所得到的定量关系式不能完全解释化合物与受体间作用，即简单的理化参数不足以完全描述化合物生物活性的本质
+
+QSAR的应用:
+
+* 预测同源物的生物活性：由一组同源物所得到的QSAR模型可用来预测同系物生物活性。对于作用机制相同的同源物，定量构效关系的研究常可得到满意的结果。对于作用机制不同的化合物，其QSAR模型表达形式往往不同，因此不能随意外推到其他类型的分子
+* 避免合成过多的化合物：在化合物的设计方面，比较常见的系列化合物为同系物，如甲基、乙基、丙基、丁基等。这样的同系物对于探索哪种理化参数对生物活性有显著的影响方面只能获得少量的信息，因此对指导进一步的化合物设计帮助不大
+* 更有目的地提高化合物的选择性：对一系列同源物的两种不同活性（如：亚型选择性）分别进行定量构效关系的研究，往往可以得到不同的关系式，根据不同的关系式所提供的差异性信息可有目的地提高化合物的选择性
+* 预测化合物的成药性质：化合物在体内的ADMET性质与其结构的关系不像配体-受体结合时关系那样紧密，因此，许多针对药物药效学而开发的方法难以适用。研究表明，药物结构的某些描述符与其ADMET性质存在定量关系，其可起到预测的作用。QSPR研究，有针对性地改造化合物的结构以期改进药动学性质。QSTR研究，改善分子的毒性。
+* 协助理解药物的作用机制：化合物结构的基本骨架必须与受体相适应才能发挥生理作用。取代基团的改变可显著影响化合物与受体的结合。研究表明，取代基是通过疏水性、电性和立体效应等因素来影晌化合物与受体相互作用的。定量构效关系的研究，如Hansch法，可定量描述化合物理化参数与生物活性关系，因而起到协助了解药物作用机制的作用。
+
+三维定量构效关系
+-------------------
+
+3D-QSAR是引入分子三维结构信息进行定量构效关系研究的方法，这种方法可间接反映药物分子与生物大分子相互作用中两者间非键相互作用特征，相对于二维定量构效关系有更加明确的物理意义和更丰富的信息量。1980年以来，三维定量构效关系也逐渐成为基于机理的合理药物设计的主要方法之一。
+
+3D-QSAR分析方法：3D-QSAR是QSAR与计算化学和分子图形学相结合的研究方法，是研究药物与受体间的相互作用、推测模拟受体结构、建立药效-结构活性关系，并进行药物分子优化的有力工具。常用的3D-QSAR包括：分子形状分析（Molecular Shape Analysis，MSA）。假想受点点阵（Hypothetical Active Site Lattice，HASL）。距离几何法（Distance Geometry Methods，DGM）。比较分子场分析（Comparative Molecular Field Analysis，CoMFA）。比较分子相似性因子分析（Comparative Molecular Similarity Indices Analysis，CoMSIA）。
+
+比较分子场分析（CoMFA）
+
+由Cramer于1988年提出，其指出：引起生物学效应的药物分子与受体间相互作用大多是可逆的非键相互作用，如范德华相互作用、静电相互作用、氢键相互作用等，并称这些相互作用为分子场。因此，在受体三维结构不明确的情况下，可以通过研究这些药物分子周围的作用势场的分布情况，并以此作为化合物的结构特征变量，建立其与化合物活性之间的关系，定量预测新设计化合物生物活性。CoMFA的提出是QSAR研究领域中的一项重大突破
+
+按照CoMFA原理，如果一组结构类似的化合物以相同方式作用于同一靶点，那它们与受体分子之间的各种作用场应具有一定相似性，而其活性差异取决于化合物周围不同的分子场。
+
+3D-QSAR建模的主要步骤
+--------------------------
+
+Processes for developing a CoMFA model:
+
+* Preparation of the data（数据准备）
+* Optimization and overlap of the 3D structures（分子优化与叠合）
+* Calculation of molecular fields（分子场计算）
+* Model training with cross validation（模型训练）
+* Validating the prediction capability with the test set（外部检测）
+
+Training set -> Geometry optimization -> Descriptor Calculations -> Model Development
+
+Test set -> Geometry optimization -> Descriptor Calculations -> Model Validation
+
+CoMFA操作基本过程
+
+1. 分子结构处理，确定活性构象（药效构象）：当有受体的晶体结构或受体与小分子的作用位点信息清楚的情况下，可采用分子对接的方法确定分子的活性构象
+2. 计算分子中的原子电荷：获取原子净电荷以便能计算分子的静电场
+3. 分子叠合（关键步骤）：叠合一般分为骨架叠合和场叠合。对于结构差异较大的化合物，叠合规则的选取对研究结果影响显著
+    
+   骨架叠合规则：
+
+   1. 在了解作用机理的前提下，可用已知活性构象为模板，优化、叠合其他分子
+   2. 在活性构象未知的情况下，用活性最高分子的低能构象作为模板，优化、叠合其他分子
+   3. 亦可依据活性类似法（Active Analogue Approach，AAA）对所有分子进行系统构象搜索，找出其共同构象，从而确立活性构象进行叠合
+
+4. 分子场计算：在叠合的分子周围产生一个包容所有分子的矩形盒子，并划分成规则排
+列的格点。用某种基团或小分子作为探针（ :math:`H^+`、:math:`Csp^{3+}`、:math:`H_2O`、:math:`CH_3` 等），在网格中以一定的步长移动（0.4~2 Å），计算分子在格点中的各种分子场，用以作为QSAR建模时的自变量
+
+  常用的探针有：
+    * :math:`Csp^{3+}` — 计算立体能和静电能 
+    * :math:`H_2O` — 计算疏水场和氢键 
+    * :math:`CH_3` — 计算van der Waals场 
+    * :math:`H^+` — 计算静电场
+
+5. 模型构建：由于分子场格点较多（往往采集到>2000个分子场值），其通常远超化合物数量，因此不能采用多元线性回归法构建模型，而需采用偏最小二乘法（Partial Least Squares，PLS），以克服自变量数目过多所引起的随机相关问题。模型精度评价亦采用交互验证系数Q，当Q^2>0.5时表示模型具有较好精度。
+6. 外部检测并利用模型预测新设计化合物活性
+7. CoMFA模型的可视化：CoMFA可用等高线图（contour map）的方式将各种场的分布用图形直观表示。从图上可以清楚地观察到各种场分布强弱对化合物活性的影响，从而可以根据模型进行现有化合物的结构修饰和改造，设计新的分子结构。
+
+3D-QSAR的限制
+
+* 在3D-QSAR中，分子的活性构象的确定以及叠合很大程度上会受到人为因素的影响，模型的有效性可能受到质疑
+* 相较而言，2D-QSAR无需对分子构象进行处理，因此其所构建的模型更为客观，稳定性更好
+
+3D-QSAR的优势
+* 3D-QSAR可以更有效、直观的分析化合物与受体之间的潜在作用模式
+
+胰蛋白酶抑制剂2D-QSAR实验
+-------------------------
+
+实验目的：
+:::::::::::::::::::
+
+1. 掌握数据集中训练集与测试集的拆分方法。
+2. 掌握分子描述符的选择和建模方法的确定。
+3. 掌握模型结果的分析。
+4. 掌握未知化合物活性预测。
+
+实验原理：
+::::::::::::::::::::
+
+使用 Discovery Studio 软件进行 2D-QSAR 模型的构建、外部数据集检测、未知活性化合物预测。
+
+本实验所用软件环境：
+
+  DS Version：19.1.0.18287
+
+  PP Version：19.1.0.1963
+
+  DS Client Version：19.1.0.18287
+
+  OS Distribution：Windows
+
+  OS Version：10.0.22000
+
+QSAR建模一般流程：
+
+* 已知活性数据收集
+* 数据集准备（训练集与测试集拆分等）
+* 分子描述属性计算（传统分子描述符、分子指纹等）
+* 模型构建（多元线性回归、偏最小二乘等）
+* 外部数据集检测
+* 未知活性化合物预测
+
+实验步骤：
+:::::::::::::
+
+1. 已知活性数据收集：本实验使用指导老师提供的 dataset-qsar.sdf 数据集。 `下载`_ 
+   
+.. _下载: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/GenerateTrainingandTestData_2022_09_16_160317_006/Input/dataset-qsar.sd
+
+2. 数据集准备（训练集与测试集拆分等）：点击 Discovery Studio 软件上的 SmallMolecules → Create QSAR Model → Generate Training and Test Data 进行训练集与测试集拆分。设置参数如下： 完成后，点击打开报告中result中的Test Set和Training Set。
+
+.. image:: /images/55.png
+
+3. 分子描述属性计算（传统分子描述符、分子指纹等）：Discovery Studio 会在模型的构建中自动计算。在构建模型时，只需在 Calculable Properties 中挑选要计算的描述符。
+4. 模型的参数设置与构建：点击 Discovery Studio 软件上的 Small Molecules → Create QSAR Model → Create Multiple Linear Regression Model 进行多元线性回归模型的构建。设置参数如下：
+
+.. image:: /images/56.png
+
+5. 未知活性化合物预测：点击 Discovery Studio 软件上的 Small Molecules → Calculate Molecular Properties →  Calculate Molecular Properties进行未知活性化合物预测。设置参数如下：
+
+.. image:: /images/57.png
+
+实验结果
+:::::::::::
+
+`训练集与测试集拆分结果`_,  `模型的构建结果`_ ， `未知活性化合物预测的结果`_
+
+.. _训练集与测试集拆分结果: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/GenerateTrainingandTestData_2022_09_16_160317_006/Output/Report.htm
+
+.. _模型的构建结果: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CreateMultipleLinearRegressionModel_2022_09_16_164216_175/Output/Report.htm
+
+.. _未知活性化合物预测的结果: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CalculateMolecularProperties_2022_09_16_164702_792/Output/Report.htm
