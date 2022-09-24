@@ -21,6 +21,7 @@
    QSAR
    AI
    SBDD
+   FBDD
    LBDD
    contribute
 .. _Github地址点这里: https://github.com/abdusemiabduweli/CADD-tutorial/
