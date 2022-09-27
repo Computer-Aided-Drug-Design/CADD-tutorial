@@ -25,4 +25,6 @@
    SBDD
    FBDD
    LBDD
+   VS
+   QM
    contribute
