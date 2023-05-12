@@ -500,7 +500,7 @@ CBP：基于 LigandScout 算法，通过识别受体‐配体相互作用的关�
 
 ◆ 基于复合物的药效团模型的构建和结果分析
 
-1. 蛋白的准备：本实验中使用老师提供的 `2irz.pdb 蛋白 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/PrepareProtein_2022_09_27_101028_655/Input/2irz.pdb>`_ 。点击 Discovery Studio 软件上菜单栏上的 Structure→ Crystal Cell→ Remove Cell 进行晶胞的去除。点击Macromolecules → Prepare Protein，设置参数如下，来进行蛋白结构的准备得到新窗口 2IRZ_prep 。接下来的操作都是在新的窗口当中进行。
+1. 蛋白的准备：本实验中使用老师提供的 `2irz.pdb 蛋白 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/PrepareProtein_2022_09_27_101028_655/Input/2irz.pdb>`_ 。点击 Discovery Studio 软件上菜单栏上的 Structure→ Crystal Cell→ Remove Cell 进行晶胞的去除。点击Macromolecules → Prepare Protein → Prepare Protein，设置参数如下，来进行蛋白结构的准备得到新窗口 2IRZ_prep 。接下来的操作都是在新的窗口当中进行。
 
 .. image:: images/153.png
 
