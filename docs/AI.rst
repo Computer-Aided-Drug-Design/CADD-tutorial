@@ -393,7 +393,7 @@ LeNet-5：手写字体识别模型（LeNet-5）诞生于1994年，是最早的�
 
 1. 已知活性数据收集：本实验使用指导老师提供的 dataset-AI-2.sdf 数据集。 `下载`_
 
-.. _下载: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/GenerateTrainingandTestData_2022_09_17_181435_596/Input/dataset-AI-2.sd
+.. _下载: https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/GenerateTrainingandTestData_2022_09_17_181435_596/Input/dataset-AI-2.sd
 
 2. 数据集预处理（正样本/负样本、训练集/测试集准备等）：本实验中，指导老师已经做好了正样本和负样本的分类。训练集/测试集的准备：点击 Discovery Studio 软件上的 Small Molecules→Create QSAR Model→Generate Training and Test Data 进行训练集与测试集拆分。完成后，点击报告中的 test set 和 training set 设置参数如下：
 
@@ -414,11 +414,11 @@ LeNet-5：手写字体识别模型（LeNet-5）诞生于1994年，是最早的�
 
 `数据集预处理结果`_,  `模型的构建结果`_ ， `未知活性化合物预测的结果`_
 
-.. _数据集预处理结果: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/GenerateTrainingandTestData_2022_09_17_181435_596/Output/Report.htm
+.. _数据集预处理结果: https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/GenerateTrainingandTestData_2022_09_17_181435_596/Output/Report.htm
 
-.. _模型的构建结果: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CreateBayesianModel_2022_09_17_181943_282/Output/Report.htm
+.. _模型的构建结果: https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CreateBayesianModel_2022_09_17_181943_282/Output/Report.htm
 
-.. _未知活性化合物预测的结果: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CalculateMolecularProperties_2022_09_17_182155_807/Output/Report.htm
+.. _未知活性化合物预测的结果: https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CalculateMolecularProperties_2022_09_17_182155_807/Output/Report.htm
 
 讨论：
 ::::::::::
