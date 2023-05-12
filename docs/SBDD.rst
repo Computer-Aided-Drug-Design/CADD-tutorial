@@ -717,7 +717,7 @@ Flexible Docking 计算过程：
 
 ◆ 靶点结构的获取及准备
 
-1. 查找靶点结构：本实验中搜索 3GEN 蛋白作为靶点。进入 PDB 网站(https://www.rcsb.org/），搜索靶蛋白。本实验中搜索 3GEN，选择 3GEN，点击 Download Files，再点击 PDB Format， `下载靶蛋白结构文件 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/PrepareProtein_2022_09_24_103147_557/Input/3GEN.dsv>`_ 。（如图所示）
+1. 查找靶点结构：本实验中搜索 3GEN 蛋白作为靶点。进入 PDB 网站(https://www.rcsb.org/），搜索靶蛋白。本实验中搜索 3GEN，选择 3GEN，点击 Download Files，再点击 PDB Format， `下载靶蛋白结构文件 <https://files.rcsb.org/download/3GEN.pdb`_ ，并用 Discovery Studio 打开下载好的文件。（如图所示）
 
 .. image:: /images/118.png
 
