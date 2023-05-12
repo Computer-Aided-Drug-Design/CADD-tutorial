@@ -241,9 +241,9 @@ Profiles-3D：点击 Discovery Studio 软件上的 Macromolecules ——> Create
 
 `Blast 蛋白序列比对的结果`_ , `创建序列-结构对齐矩阵的结果`_ , `蛋白建模的结果`_, 
 
-.. _`Blast 蛋白序列比对的结果`: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/BLASTSearchNCBIServer_2022_09_21_214334_399/Output/Report.htm
-.. _`创建序列-结构对齐矩阵的结果`: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/AlignSequencetoTemplates_2022_09_21_214915_437/Output/Report.htm
-.. _`蛋白建模的结果`: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/BuildHomologyModels_2022_09_21_215451_145/Output/Report.htm
+.. _`Blast 蛋白序列比对的结果`: https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/BLASTSearchNCBIServer_2022_09_21_214334_399/Output/Report.htm
+.. _`创建序列-结构对齐矩阵的结果`: https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/AlignSequencetoTemplates_2022_09_21_214915_437/Output/Report.htm
+.. _`蛋白建模的结果`: https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/BuildHomologyModels_2022_09_21_215451_145/Output/Report.htm
 
 拉氏图的绘制的结果：
 
@@ -251,7 +251,7 @@ Profiles-3D：点击 Discovery Studio 软件上的 Macromolecules ——> Create
 
 `Profiles-3D的结果`_
 
-.. _`Profiles-3D的结果`: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/VerifyProteinProfiles-3D_2022_09_21_220456_652/Output/Report.htm
+.. _`Profiles-3D的结果`: https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/VerifyProteinProfiles-3D_2022_09_21_220456_652/Output/Report.htm
 
 以残基打分作图的结果：
 
@@ -712,7 +712,7 @@ Flexible Docking 计算过程：
 
 ◆ 靶点结构的获取及准备
 
-1. 查找靶点结构：本实验中搜索 3GEN 蛋白作为靶点。进入 PDB 网站(https://www.rcsb.org/），搜索靶蛋白。本实验中搜索 3GEN，选择 3GEN，点击 Download Files，再点击 PDB Format， `下载靶蛋白结构文件 <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/PrepareProtein_2022_09_24_103147_557/Input/3GEN.dsv>`_ 。（如图所示）
+1. 查找靶点结构：本实验中搜索 3GEN 蛋白作为靶点。进入 PDB 网站(https://www.rcsb.org/），搜索靶蛋白。本实验中搜索 3GEN，选择 3GEN，点击 Download Files，再点击 PDB Format， `下载靶蛋白结构文件 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/PrepareProtein_2022_09_24_103147_557/Input/3GEN.dsv>`_ 。（如图所示）
 
 .. image:: /images/118.png
 
@@ -774,12 +774,12 @@ Flexible Docking 计算过程：
 实验结果：
 :::::::::::::
 
-1. `靶蛋白的准备 <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/PrepareProtein_2022_09_24_103147_557/Output/Report.htm>`_
-2. `小分子配体的准备 <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/PrepareLigands_2022_09_24_103829_835/Output/Report.htm>`_
-3. `小分子配体的能量优化 <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/Minimization_2022_09_24_104019_301/Output/Report.htm>`_
+1. `靶蛋白的准备 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/PrepareProtein_2022_09_24_103147_557/Output/Report.htm>`_
+2. `小分子配体的准备 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/PrepareLigands_2022_09_24_103829_835/Output/Report.htm>`_
+3. `小分子配体的能量优化 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/Minimization_2022_09_24_104019_301/Output/Report.htm>`_
 4. LIBDOCK 分子对接
 
-   * `LIBDOCK 分子对接 <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/DockLigandsLibDock_2022_09_24_104206_503/Output/Report.htm>`_
+   * `LIBDOCK 分子对接 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/DockLigandsLibDock_2022_09_24_104206_503/Output/Report.htm>`_
    * RMSD 值计算
 
    .. table:: Heavy Atom RMSD to 3GEN_ligand_origInal 32
@@ -820,12 +820,12 @@ Flexible Docking 计算过程：
       3GEN_ligand 100                3GEN_ligand_origInal 32          8.2923
       =====================  ===================================  =============
 
-   * `对 LIBDOCK 对接结果进行重打分 Score Ligand Poses <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/ScoreLigandPoses_2022_09_24_104637_968/Output/Report.htm>`_
-   * `对 LIBDOCK 对接结果进行重打分 Analyze Ligand Poses <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/AnalyzeLigandPoses_2022_09_24_104807_518/Output/Report.htm>`_
+   * `对 LIBDOCK 对接结果进行重打分 Score Ligand Poses <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/ScoreLigandPoses_2022_09_24_104637_968/Output/Report.htm>`_
+   * `对 LIBDOCK 对接结果进行重打分 Analyze Ligand Poses <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/AnalyzeLigandPoses_2022_09_24_104807_518/Output/Report.htm>`_
   
 5. CDOCKER 分子对接
 
-   * `CDOCKER 分子对接 <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/DockLigandsCDOCKER_2022_09_24_170213_060/Output/Report.htm>`_
+   * `CDOCKER 分子对接 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/DockLigandsCDOCKER_2022_09_24_170213_060/Output/Report.htm>`_
    * RMSD 值计算
 
    .. table:: Heavy Atom RMSD to 3GEN_ligand_origInal 11
@@ -845,12 +845,12 @@ Flexible Docking 计算过程：
       3GEN_ligand 10                 3GEN_ligand_origInal 11          0.5110
       ==================== ==================================== ==================
 
-   * `对 CDOCKER 对接结果进行重打分 Score Ligand Poses <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/ScoreLigandPoses_2022_09_24_171043_320/Output/Report.htm>`_
-   * `对 CDOCKER 对接结果进行重打分 Analyze Ligand Poses <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/AnalyzeLigandPoses_2022_09_24_171442_307/Output/Report.htm>`_
+   * `对 CDOCKER 对接结果进行重打分 Score Ligand Poses <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/ScoreLigandPoses_2022_09_24_171043_320/Output/Report.htm>`_
+   * `对 CDOCKER 对接结果进行重打分 Analyze Ligand Poses <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/AnalyzeLigandPoses_2022_09_24_171442_307/Output/Report.htm>`_
   
 6. FlexibleDocking 分子对接
 
-   * `FlexibleDocking 分子对接 <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/FlexibleDocking_2022_09_24_174456_537/Output/Report.htm>`_
+   * `FlexibleDocking 分子对接 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/FlexibleDocking_2022_09_24_174456_537/Output/Report.htm>`_
    * RMSD 值计算
 
    .. table:: Heavy Atom RMSD to 3GEN_ligand_origInal 7
@@ -866,8 +866,8 @@ Flexible Docking 计算过程：
       3GEN_ligand 6                  3GEN_ligand_origInal 7          11.0410
       ================ ======================================== =================
 
-   * `对 FlexibleDocking 对接结果进行重打分 Score Ligand Poses <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/ScoreLigandPoses_2022_09_24_175408_932/Output/Report.htm>`_
-   * `对 FlexibleDocking 对接结果进行重打分 Analyze Ligand Poses <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/AnalyzeLigandPoses_2022_09_24_175548_930/Output/Report.htm>`_
+   * `对 FlexibleDocking 对接结果进行重打分 Score Ligand Poses <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/ScoreLigandPoses_2022_09_24_175408_932/Output/Report.htm>`_
+   * `对 FlexibleDocking 对接结果进行重打分 Analyze Ligand Poses <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/AnalyzeLigandPoses_2022_09_24_175548_930/Output/Report.htm>`_
 
 讨论：
 :::::::::::

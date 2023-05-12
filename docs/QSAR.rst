@@ -321,7 +321,7 @@ QSAR建模一般流程：
 
 1. 已知活性数据收集：本实验使用指导老师提供的 dataset-qsar.sdf 数据集。 `下载`_ 
    
-.. _下载: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/GenerateTrainingandTestData_2022_09_16_160317_006/Input/dataset-qsar.sd
+.. _下载: https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/GenerateTrainingandTestData_2022_09_16_160317_006/Input/dataset-qsar.sd
 
 2. 数据集准备（训练集与测试集拆分等）：点击 Discovery Studio 软件上的 SmallMolecules → Create QSAR Model → Generate Training and Test Data 进行训练集与测试集拆分。设置参数如下： 完成后，点击打开报告中result中的Test Set和Training Set。
 
@@ -341,8 +341,8 @@ QSAR建模一般流程：
 
 `训练集与测试集拆分结果`_,  `模型的构建结果`_ ， `未知活性化合物预测的结果`_
 
-.. _训练集与测试集拆分结果: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/GenerateTrainingandTestData_2022_09_16_160317_006/Output/Report.htm
+.. _训练集与测试集拆分结果: https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/GenerateTrainingandTestData_2022_09_16_160317_006/Output/Report.htm
 
-.. _模型的构建结果: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CreateMultipleLinearRegressionModel_2022_09_16_164216_175/Output/Report.htm
+.. _模型的构建结果: https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CreateMultipleLinearRegressionModel_2022_09_16_164216_175/Output/Report.htm
 
-.. _未知活性化合物预测的结果: https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CalculateMolecularProperties_2022_09_16_164702_792/Output/Report.htm
+.. _未知活性化合物预测的结果: https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CalculateMolecularProperties_2022_09_16_164702_792/Output/Report.htm

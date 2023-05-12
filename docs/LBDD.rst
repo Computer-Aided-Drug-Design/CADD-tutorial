@@ -481,7 +481,7 @@ CBP：基于 LigandScout 算法，通过识别受体‐配体相互作用的关�
 
 ◆ 基于分子共同特征的药效团模型的构建和验证
 
-1. 训练集分子的准备：本实验中使用老师提供的 `5HT2c_ligands.sd 训练集 <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/FeatureMapping_2022_09_26_141920_350/Input/5HT2c_ligands.sd>`_。
+1. 训练集分子的准备：本实验中使用老师提供的 `5HT2c_ligands.sd 训练集 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/FeatureMapping_2022_09_26_141920_350/Input/5HT2c_ligands.sd>`_。
 2. 药效团特征元素的选取：
 
    药效特征元素的定义：点击 Discovery Studio 软件上的 Pharmacophores → Edit and Cluster Features → Feature Mapping 进行药效特征元素的定义。设置参数如下图。
@@ -490,7 +490,7 @@ CBP：基于 LigandScout 算法，通过识别受体‐配体相互作用的关�
 
    药效特征元素的查看：点击 Discovery Studio 软件上的 Pharmacophores → Edit and Cluster Features → Current Feature → All Features 进行药效特征元素的查看。
 
-3. Common Feature Pharmacophore 的构建：点击 Discovery Studio 软件上的Pharmacophores → Create Pharmacophores Automatically → Common Feature Pharmacophore Generation 进行 Common Feature Pharmacophore 的构建。设置参数如下图，使用老师提供的 `Decoy 数据集active_ligands <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CommonFeaturePharmacophoreGeneration_2022_09_26_144258_318/Input/active_ligands.sd>`_ 和 `Decoy 数据集inactive_ligands <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CommonFeaturePharmacophoreGeneration_2022_09_26_144258_318/Input/inactive_ligands.sd>`_ 进行药效团验证。
+3. Common Feature Pharmacophore 的构建：点击 Discovery Studio 软件上的Pharmacophores → Create Pharmacophores Automatically → Common Feature Pharmacophore Generation 进行 Common Feature Pharmacophore 的构建。设置参数如下图，使用老师提供的 `Decoy 数据集active_ligands <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CommonFeaturePharmacophoreGeneration_2022_09_26_144258_318/Input/active_ligands.sd>`_ 和 `Decoy 数据集inactive_ligands <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CommonFeaturePharmacophoreGeneration_2022_09_26_144258_318/Input/inactive_ligands.sd>`_ 进行药效团验证。
 
 .. image:: images/151.png
 
@@ -500,7 +500,7 @@ CBP：基于 LigandScout 算法，通过识别受体‐配体相互作用的关�
 
 ◆ 基于复合物的药效团模型的构建和结果分析
 
-1. 蛋白的准备：本实验中使用老师提供的 `2irz.pdb 蛋白 <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/PrepareProtein_2022_09_27_101028_655/Input/2IRZ.dsv>`_ 。点击 Discovery Studio 软件上菜单栏上的 Structure→ Crystal Cell→ Remove Cell 进行晶胞的去除。点击Macromolecules → Prepare Protein，设置参数如下，来进行蛋白结构的准备得到新窗口3GEN_prep。接下来的操作都是在新的窗口当中进行。
+1. 蛋白的准备：本实验中使用老师提供的 `2irz.pdb 蛋白 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/PrepareProtein_2022_09_27_101028_655/Input/2IRZ.dsv>`_ 。点击 Discovery Studio 软件上菜单栏上的 Structure→ Crystal Cell→ Remove Cell 进行晶胞的去除。点击Macromolecules → Prepare Protein，设置参数如下，来进行蛋白结构的准备得到新窗口3GEN_prep。接下来的操作都是在新的窗口当中进行。
 
 .. image:: images/153.png
 
@@ -517,15 +517,15 @@ CBP：基于 LigandScout 算法，通过识别受体‐配体相互作用的关�
 
 基于分子共同特征的药效团模型的构建和验证：
 
-1. `药效特征元素的定义的结果 <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/FeatureMapping_2022_09_26_141920_350/Output/Report.htm>`_
-2. `Common Feature Pharmacophore 的构建的结果 <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CommonFeaturePharmacophoreGeneration_2022_09_26_144258_318/Output/Report.htm>`_
-3. `外部测试集分析的结果 <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/LigandProfiler_2022_09_26_222033_205/Output/Report.htm>`_
+1. `药效特征元素的定义的结果 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/FeatureMapping_2022_09_26_141920_350/Output/Report.htm>`_
+2. `Common Feature Pharmacophore 的构建的结果 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/CommonFeaturePharmacophoreGeneration_2022_09_26_144258_318/Output/Report.htm>`_
+3. `外部测试集分析的结果 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/LigandProfiler_2022_09_26_222033_205/Output/Report.htm>`_
 
 
 基于复合物的药效团模型的构建和结果分析：
 
-1. `蛋白的准备 <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/PrepareProtein_2022_09_27_101028_655/Output/Report.htm>`_
-2. `药效团模型的构建 <https://abdusemiabduweli.github.io/CADD-Tutorial-Experiments-Result/experiment_results/Receptor-LigandPharmacophoreGeneration_2022_09_27_102233_541/Output/Report.htm>`_
+1. `蛋白的准备 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/PrepareProtein_2022_09_27_101028_655/Output/Report.htm>`_
+2. `药效团模型的构建 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/Receptor-LigandPharmacophoreGeneration_2022_09_27_102233_541/Output/Report.htm>`_
 
 讨论：
 :::::::::::
