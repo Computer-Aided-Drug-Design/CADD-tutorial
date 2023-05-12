@@ -504,7 +504,7 @@ CBP：基于 LigandScout 算法，通过识别受体‐配体相互作用的关�
 
 .. image:: images/153.png
 
-2. 配体的准备：从 2IRZ_prep 窗口中剪切 2IRZ 自带的配体粘贴到新窗口中，并重命名为 Ligand。（重命名的操作：点击选中 2irz 并单击鼠标右键，选择最后一项 Attribute of 2irz...，出现下图对话框，将 Name 改为 Ligand）
+2. 配体的准备：从 2IRZ_prep 窗口中剪切 2IRZ 自带的配体（名称为Ligand1，在Ligand Groups中）粘贴到新窗口中，并重命名为 Ligand。（重命名的操作：点击选中 2irz 并单击鼠标右键，选择最后一项 Attribute of 2irz...，出现下图对话框，将 Name 改为 Ligand）
 
 .. image:: images/154.png
 
