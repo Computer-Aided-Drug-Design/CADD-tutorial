@@ -500,15 +500,15 @@ CBP：基于 LigandScout 算法，通过识别受体‐配体相互作用的关�
 
 ◆ 基于复合物的药效团模型的构建和结果分析
 
-1. 蛋白的准备：本实验中使用老师提供的 `2irz.pdb 蛋白 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/PrepareProtein_2022_09_27_101028_655/Input/2IRZ.dsv>`_ 。点击 Discovery Studio 软件上菜单栏上的 Structure→ Crystal Cell→ Remove Cell 进行晶胞的去除。点击Macromolecules → Prepare Protein，设置参数如下，来进行蛋白结构的准备得到新窗口3GEN_prep。接下来的操作都是在新的窗口当中进行。
+1. 蛋白的准备：本实验中使用老师提供的 `2irz.pdb 蛋白 <https://computer-aided-drug-design.github.io/CADD-Tutorial-Experiments-Result/experiment_results/PrepareProtein_2022_09_27_101028_655/Input/2irz.pdb>`_ 。点击 Discovery Studio 软件上菜单栏上的 Structure→ Crystal Cell→ Remove Cell 进行晶胞的去除。点击Macromolecules → Prepare Protein，设置参数如下，来进行蛋白结构的准备得到新窗口 2IRZ_prep 。接下来的操作都是在新的窗口当中进行。
 
 .. image:: images/153.png
 
-2. 配体的准备：从 2IRZ_prep 窗口中剪贴 2IRZ 自带的配体粘贴到新窗口中，并重命名为 Ligand。（重命名的操作：点击选中 2irz 并单击鼠标右键，选择最后一项 Attribute of 2irz...，出现下图对话框，将 Name 改为 Ligand）
+2. 配体的准备：从 2IRZ_prep 窗口中剪切 2IRZ 自带的配体粘贴到新窗口中，并重命名为 Ligand。（重命名的操作：点击选中 2irz 并单击鼠标右键，选择最后一项 Attribute of 2irz...，出现下图对话框，将 Name 改为 Ligand）
 
 .. image:: images/154.png
 
-3. 药效团模型的构建：点击 Discovery Studio 软件上的 Pharmacophores → Create Pharmacophores Automatically → Receptor-Ligand Pharmacophore Generation 进行药效团模型的构建，设置参数如下。再把小分子再拖回到结果窗口，观察药效团与小分子的匹配情况。
+3. 药效团模型的构建：点击 Discovery Studio 软件上的 Pharmacophores → Create Pharmacophores Automatically → Receptor-Ligand Pharmacophore Generation 进行药效团模型的构建，设置参数如下。再把配体小分子再复制粘贴到结果窗口，观察药效团与配体小分子的匹配情况。
 
 .. image:: images/155.png
 
