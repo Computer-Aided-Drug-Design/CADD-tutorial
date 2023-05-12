@@ -209,9 +209,14 @@ Cys也与His一样，常见于酶活性位点
 
 .. image:: /images/86.png
 
-Blast 蛋白序列比对：点击 Discovery Studio 软件上的 Macromolecules ——> Create Homology Models ——> BLAST Search (NCBI Server)来进行蛋白晶体数据库中相似蛋白的查找。
+蛋白序列重命名：右击蛋白序列名称（如下图所示），点击 Rename Sequence，在弹出的输入框中输入如 P2RY6 等简单名称。（本例输入了 P2RY6）
 
 .. image:: /images/90.png
+
+.. image:: /images/195.png
+
+Blast 蛋白序列比对：点击 Discovery Studio 软件上的 Macromolecules ——> Create Homology Models ——> BLAST Search (NCBI Server)来进行蛋白晶体数据库中相似蛋白的查找。设置参数如下
+
 .. image:: /images/87.png
 
 3. 选择合适蛋白模板：本实验选择了 4XNV_A（E-value 最小，E-value（E值）小于 1×10^-5，模板蛋白和目标蛋白的序列一致性大于30%），右键此选项，点击Load Selected Structures 进行蛋白模板的载入。
