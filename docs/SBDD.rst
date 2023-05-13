@@ -760,7 +760,7 @@ Flexible Docking 计算过程：
 
 ◆ 柔性分子对接
 
-确保当前窗口为准备好的大分子，即 3GEN_prep，删除配体，双击 Discovery Studio软件上的 Protocols → Discovery Studio → Receptor-Ligand Interactions → Docking → FlexibleDocking 进行 Flexible Docking 柔性分子对接。设置参数如下：
+确保当前窗口为准备好的大分子，即 3GEN_prep，删除配体。点击选上 Discovery Studio 软件菜单栏上的 View → Explorers → Protocols，再然后双击 Discovery Studio软件上的 Protocols → Discovery Studio → Receptor-Ligand Interactions → Docking → FlexibleDocking 进行 Flexible Docking 柔性分子对接。设置参数如下：
 
 .. image:: images/125.png
 
